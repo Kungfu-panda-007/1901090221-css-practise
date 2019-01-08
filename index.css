@@ -8,60 +8,33 @@ body {
 }
 
 .header {
-  text-align: center;
-  padding: 24px;
+  padding: 32px;
   font-size: 24px;
+  text-align: center;
   background-color: white;
 }
 
-.header h1 {
-  font-size: 50px;
-}
-
-.topnav {
-  overflow: hidden;
+.top-nav {
   background-color: #333;
+  overflow: hidden;
 }
 
-.topnav a:hover {
-  background-color: #aaa;
-  color: black;
-}
-
-.topnav a {
+.top-nav a {
   display: block;
   float: left;
+  padding: 12px 16px;
   text-align: center;
   text-decoration: none;
   color: white;
-  padding: 12px 14px;
 }
 
-.topnav .more {
+.top-nav a:hover {
+  color: black;
+  background-color: #aaa;
+}
+
+.top-nav .more {
   float: right;
-}
-
-.left-column {
-  float: left;
-  width: 75%;
-}
-
-.right-column {
-  padding-left: 24px;
-  float: left;
-  width: 25%;
-}
-
-.fakeimg {
-  padding: 24px;
-  height: 200px;
-  background-color: #888;
-}
-
-.card {
-  margin-top: 20px;
-  padding: 20px;
-  background-color: white;
 }
 
 .section:after {
@@ -70,12 +43,63 @@ body {
   clear: both;
 }
 
+.left-column {
+  width: 75%;
+  float: left;
+}
+
+.right-column {
+  width: 25%;
+  float: left;
+  padding-left: 12px;
+}
+
+.card {
+  background-color: white;
+  margin-top: 12px;
+  padding: 12px;
+}
+
 .footer {
-  text-align: center;
-  padding: 18px;
-  font-size: 32px;
+  margin-top: 12px;
   background-color: black;
   color: white;
+  text-align: center;
+  padding: 24px;
+}
+
+.fake-img {
+  height: 150px;
+  margin-top: 24px;
+  background-color: #bbb;
+}
+
+.company-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.company-table th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.company-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.company-table tr:hover {
+  background-color: #ddd;
+}
+
+.company-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
 }
 
 @media (max-width: 960px) {
@@ -86,8 +110,8 @@ body {
 }
 
 @media (max-width: 420px) {
-  .topnav a {
-    width: 100%;
+  .top-nav a {
     float: none;
+    width: 100%;
   }
 }
